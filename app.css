@@ -70,55 +70,6 @@ body {
 }
 
 
-@media (max-width: 1350px) {
-.invitation-name-span {
-  font-size: 80px;
-}
-
-
-.invite-weds {
-  font-size: 40px;
-}
-
-}
-@media (max-width: 1200px) {
-  .invitation-name-span {
-  font-size: 60px;
-}
-
-
-.invite-weds {
-  font-size: 30px;
-}
-}
-@media (max-width: 1024px) {
-  .invitation-name-span {
-  font-size: 60px;
-}
-
-.back-ground {
-  background-position: -1px -100px;
-}
-
-
-.invite-weds {
-  font-size: 30px;
-}
-}
-@media (max-width: 860px) {
-    .invitation-name-span {
-  font-size: 60px;
-}
-
-.back-ground {
-  background-position: -1px 0px;
-}
-.invite-weds {
-  font-size: 30px;
-}
-
-}
-
 svg {
     position: absolute;
     font: 6em 'Loved by the King';
@@ -173,5 +124,155 @@ svg {
   left: 50%;
   transform: translate(-50%,-50%);
    font-family: 'Romanesco', cursive;
+}
+
+
+
+@media (max-width: 1350px) {
+.invitation-name-span {
+  font-size: 80px;
+}
+
+
+.invite-weds {
+  font-size: 40px;
+}
+
+}
+@media (max-width: 1200px) {
+  .invitation-name-span {
+  font-size: 60px;
+}
+
+
+.invite-weds {
+  font-size: 30px;
+}
+}
+@media (max-width: 1024px) {
+  .invitation-name-span {
+  font-size: 60px;
+}
+
+.back-ground {
+  background-position: -130px 0px;
+}
+
+
+.invite-weds {
+  font-size: 30px;
+}
+}
+@media (max-width: 860px) {
+    .invitation-name-span {
+  font-size: 60px;
+}
+
+.back-ground {
+  background-position: -130px 0px;
+}
+.invite-weds {
+  font-size: 30px;
+}
+
+}
+
+
+@media (max-width: 660px) {
+    .invitation-name-span {
+  font-size: 40px;
+}
+
+.back-ground {
+  background-position: -130px 0px;
+}
+.invite-weds {
+  font-size: 20px;
+}
+
+
+#timeleftSecond {
+  width: 80px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#timeleftDay {
+  width: 80px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#timeleftHours {
+  width: 80px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#timeleftMin {
+  width: 80px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.day-left {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+   font-family: 'Romanesco', cursive;
+}
+
+}
+
+@media (max-width: 320px) {
+    .invitation-name-span {
+  font-size: 40px;
+}
+
+.back-ground {
+  background-position: -130px 0px;
+}
+.invite-weds {
+  font-size: 20px;
+}
+
+
+#timeleftSecond {
+  width: 70px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#timeleftDay {
+  width: 70px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#timeleftHours {
+  width: 70px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#timeleftMin {
+  width: 70px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.day-left {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+   font-family: 'Romanesco', cursive;
+}
+
 }
 

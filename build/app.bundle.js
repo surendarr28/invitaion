@@ -375,5 +375,28 @@ var burst19 = new mojs.Burst(_extends({}, BUST_OPTS, {
 
 // timeline.play();
 
+
+var calcNewYear = setInterval(function () {
+    var date_future = new Date("06/05/2017");
+    var date_now = new Date();
+
+    var seconds = Math.floor((date_future - date_now) / 1000);
+    var minutes = Math.floor(seconds / 60);
+    var hours = Math.floor(minutes / 60);
+    var days = Math.floor(hours / 24);
+
+    hours = hours - days * 24;
+    minutes = minutes - days * 24 * 60 - hours * 60;
+    seconds = seconds - days * 24 * 60 * 60 - hours * 60 * 60 - minutes * 60;
+
+    //var timeElemet = document.getElementById('timeleft');
+
+    //$("#timeleft").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
+    $("#timeleftDay").text("D-" + days + " ");
+    $("#timeleftHours").text("H-" + hours + " ");
+    $("#timeleftMin").text("M-" + minutes + " ");
+    $("#timeleftSecond").text("S-" + seconds);
+}, 1000);
+
 /***/ })
 /******/ ]);

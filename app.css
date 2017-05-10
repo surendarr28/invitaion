@@ -14,7 +14,7 @@ body {
 .back-ground {
     background: url(/images/wedss2.jpg);
     background-repeat: no-repeat;
-    opacity: 0.1;
+    opacity: 0.2;
     background-size: cover;
     background-position: -1px -250px;
     height: 100%;
@@ -23,6 +23,7 @@ body {
 
 .invitation-name {
   color: deeppink;
+  text-align: center;
 }
 
 .invitation-name-span {
@@ -43,6 +44,31 @@ body {
   padding: 0px 20px; 
   color:#f774bb;
 }
+
+#timeleftSecond {
+  width: 150px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#timeleftDay {
+  width: 150px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#timeleftHours {
+  width: 150px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#timeleftMin {
+  width: 150px;
+  overflow: hidden;
+  display: inline-block;
+}
+
 
 @media (max-width: 1350px) {
 .invitation-name-span {
@@ -70,6 +96,10 @@ body {
   font-size: 60px;
 }
 
+.back-ground {
+  background-position: -1px -100px;
+}
+
 
 .invite-weds {
   font-size: 30px;
@@ -80,10 +110,13 @@ body {
   font-size: 60px;
 }
 
-
+.back-ground {
+  background-position: -1px 0px;
+}
 .invite-weds {
   font-size: 30px;
 }
+
 }
 
 svg {
@@ -131,3 +164,14 @@ svg {
 @keyframes stroke-offset{
 	100% {stroke-dashoffset: -35%;}
 }
+
+.day-left {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+   font-family: 'Romanesco', cursive;
+}
+

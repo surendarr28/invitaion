@@ -8,7 +8,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: 'Loved by the King', cursive;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .back-ground {
@@ -43,28 +43,25 @@ body {
   font-size:60px;
   padding: 0px 20px; 
   color:#f774bb;
+  font-family: 'Loved by the King', cursive;
 }
 
 #timeleftSecond {
-  width: 150px;
   overflow: hidden;
   display: inline-block;
 }
 
 #timeleftDay {
-  width: 150px;
   overflow: hidden;
   display: inline-block;
 }
 
 #timeleftHours {
-  width: 150px;
   overflow: hidden;
   display: inline-block;
 }
 
 #timeleftMin {
-  width: 150px;
   overflow: hidden;
   display: inline-block;
 }
@@ -123,7 +120,7 @@ svg {
   top: 78%;
   left: 50%;
   transform: translate(-50%,-50%);
-   font-family: 'Romanesco', cursive;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 
@@ -191,38 +188,8 @@ svg {
 }
 
 
-#timeleftSecond {
-  width: 80px;
-  overflow: hidden;
-  display: inline-block;
-}
-
-#timeleftDay {
-  width: 80px;
-  overflow: hidden;
-  display: inline-block;
-}
-
-#timeleftHours {
-  width: 80px;
-  overflow: hidden;
-  display: inline-block;
-}
-
-#timeleftMin {
-  width: 80px;
-  overflow: hidden;
-  display: inline-block;
-}
-
 .day-left {
-  width: 100%;
-  text-align: center;
-  position: absolute;
   top: 70%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-   font-family: 'Romanesco', cursive;
 }
 
 }
@@ -240,38 +207,8 @@ svg {
 }
 
 
-#timeleftSecond {
-  width: 70px;
-  overflow: hidden;
-  display: inline-block;
-}
-
-#timeleftDay {
-  width: 70px;
-  overflow: hidden;
-  display: inline-block;
-}
-
-#timeleftHours {
-  width: 70px;
-  overflow: hidden;
-  display: inline-block;
-}
-
-#timeleftMin {
-  width: 70px;
-  overflow: hidden;
-  display: inline-block;
-}
-
 .day-left {
-  width: 100%;
-  text-align: center;
-  position: absolute;
   top: 75%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-   font-family: 'Romanesco', cursive;
 }
 
 }

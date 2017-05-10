@@ -381,10 +381,10 @@ var calcNewYear = setInterval(function () {
     //var timeElemet = document.getElementById('timeleft');
 
     //$("#timeleft").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
-    $("#timeleftDay").text("D-" + days + " ");
-    $("#timeleftHours").text("H-" + hours + " ");
-    $("#timeleftMin").text("M-" + minutes + " ");
-    $("#timeleftSecond").text("S-" + seconds);
+    $("#timeleftDay").text(days);
+    $("#timeleftHours").text(hours);
+    $("#timeleftMin").text(minutes);
+    $("#timeleftSecond").text(seconds);
 }, 1000);
 
 

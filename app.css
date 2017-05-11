@@ -8,17 +8,24 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .back-ground {
-    background: url(/images/wedss2.jpg);
+    background: url(/images/weds.jpg);
     background-repeat: no-repeat;
     opacity: 0.2;
     background-size: cover;
     background-position: -1px -250px;
     height: 100%;
     width: 100%;
+}
+
+.subtext {
+  font-size: 3em;
+  color: #0074f3;
+  padding: 10px;
 }
 
 .invitation-name {
@@ -37,6 +44,8 @@ body {
     top: 63%;
     left: 50%;
     transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
 }
 
 .invite-weds {
@@ -46,24 +55,34 @@ body {
   font-family: 'Loved by the King', cursive;
 }
 
-#timeleftSecond {
+.date-block {
   overflow: hidden;
   display: inline-block;
+  text-align: center;
+  width: 15%;
+  height: 20%;
+  margin: 0 10px;
+  border: 2px solid #0074f3;
+}
+
+#timeleftSecond {
+  display: block;
 }
 
 #timeleftDay {
-  overflow: hidden;
-  display: inline-block;
+  display: block;
 }
 
 #timeleftHours {
-  overflow: hidden;
-  display: inline-block;
+  display: block;
 }
 
 #timeleftMin {
-  overflow: hidden;
-  display: inline-block;
+  display: block;
+}
+
+.distance-invite {
+  font-size: 10px;
 }
 
 
@@ -117,9 +136,11 @@ svg {
   width: 100%;
   text-align: center;
   position: absolute;
-  top: 78%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
@@ -165,6 +186,10 @@ svg {
   font-size: 60px;
 }
 
+.subtext {
+  font-size: 1.5em;
+}
+
 .back-ground {
   background-position: -130px 0px;
 }
@@ -180,6 +205,10 @@ svg {
   font-size: 40px;
 }
 
+.subtext {
+  font-size: 1.5em;
+}
+
 .back-ground {
   background-position: -130px 0px;
 }
@@ -187,10 +216,6 @@ svg {
   font-size: 20px;
 }
 
-
-.day-left {
-  top: 70%;
-}
 
 }
 
@@ -199,16 +224,15 @@ svg {
   font-size: 40px;
 }
 
+.subtext {
+  font-size: 1.2em;
+}
+
 .back-ground {
   background-position: -130px 0px;
 }
 .invite-weds {
   font-size: 20px;
-}
-
-
-.day-left {
-  top: 75%;
 }
 
 }

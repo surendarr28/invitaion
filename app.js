@@ -92,7 +92,7 @@ const clickheart = new mojs.Shape({
 
 
 setInterval(function () {
-    const coords = { x: Math.floor(Math.random() * window.innerWidth) + 10, y: Math.floor(Math.random() * 300) + 10 };
+    const coords = { x: Math.floor(Math.random() * (window.innerWidth)) + 10, y: Math.floor(Math.random() * 300) + 10 };
     clickBurst
         .tune(coords)
         .replay();

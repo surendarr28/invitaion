@@ -63,6 +63,7 @@ body {
   height: 20%;
   margin: 0 10px;
   border: 2px solid #0074f3;
+  border-radius: 10px;
 }
 
 #timeleftSecond {

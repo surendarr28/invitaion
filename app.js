@@ -33,6 +33,52 @@ const heart = new mojs.Shape({
 }).play();
 
 
+const clickBurst1 = new mojs.Burst({
+    left: 0, top: 0,
+    radius: { 4: 100 },
+    count: 20,
+    shape: 'heart',
+    children: {
+        shape: 'heart',
+        fill: [{ '#9EC9F5': '#9ED8C6' },
+        { '#91D3F7': '#9AE4CF' },
+
+        { '#DC93CF': '#E3D36B' },
+        { '#CF8EEF': '#CBEB98' },
+
+        { '#87E9C6': '#1FCC93' },
+        { '#A7ECD0': '#9AE4CF' },
+
+        { '#87E9C6': '#A635D9' },
+        { '#D58EB3': '#E0B6F5' },
+
+        { '#F48BA2': '#CF8EEF' },
+        { '#91D3F7': '#A635D9' },
+
+        { '#CF8EEF': '#CBEB98' },
+        { '#87E9C6': '#A635D9' }],
+        scale: { 2: 0, easing: 'cubic.out' },
+        pathScale: [.8, null],
+        degreeShift: [13, null],
+        duration: [1000, 1500],
+        strokeWidth: 50,
+        easing: 'cubic.out'
+
+    }
+});
+
+const clickheart1 = new mojs.Shape({
+    left: 0, top: 0,
+    shape: 'heart',
+    fill: 'deeppink',
+    scale: { 0.5: 0, easing: 'cubic.out' },
+    duration: 1000,
+    strokeWidth: 50,
+    easing: 'cubic.out',
+    delay: 'stagger(0, 100)'
+});
+
+
 const clickBurst = new mojs.Burst({
     left: 0, top: 0,
     radius: { 4: 100 },
@@ -79,16 +125,16 @@ const clickheart = new mojs.Shape({
 });
 
 
-// document.addEventListener('click', (e) => {
-//     const coords = { x: e.pageX, y: e.pageY };
-//     clickBurst
-//         .tune(coords)
-//         .replay();
+document.addEventListener('click', (e) => {
+    const coords = { x: e.pageX, y: e.pageY };
+    clickBurst1
+        .tune(coords)
+        .replay();
 
-//     clickheart
-//         .tune(coords)
-//         .replay()
-// });
+    clickheart1
+        .tune(coords)
+        .replay()
+});
 
 
 setInterval(function () {

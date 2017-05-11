@@ -23,9 +23,11 @@ body {
 }
 
 .subtext {
-  font-size: 3em;
-  color: #0074f3;
-  padding: 10px;
+    font-size: 3em;
+    color: #fff;
+    padding: 10px;
+    background: #0074f3;
+    border: 0;
 }
 
 .invitation-name {

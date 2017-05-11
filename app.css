@@ -15,7 +15,7 @@ body {
 .back-ground {
     background: url(/images/weds.jpg);
     background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.4;
     background-size: cover;
     background-position: -1px -250px;
     height: 100%;

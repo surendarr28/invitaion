@@ -392,6 +392,20 @@ var calcNewYear = setInterval(function () {
     //var timeElemet = document.getElementById('timeleft');
 
     //$("#timeleft").text("Time until new year:\nDays: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds: " + seconds);
+    if (!days) {
+        $("#dayBlock").hide();
+    }
+    if (!days && !hours) {
+        $("#hrsBlock").hide();
+    }
+
+    if (!days && !hours && !minutes) {
+        $("#minBlock").hide();
+    }
+
+    if (!days && !hours && !minutes && !seconds) {
+        $("#secBlock").hide();
+    }
     $("#timeleftDay").text(days);
     $("#timeleftHours").text(hours);
     $("#timeleftMin").text(minutes);

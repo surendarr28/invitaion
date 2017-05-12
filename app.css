@@ -16,6 +16,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
+  background-color: #fff;
 }
 
 .secondPageImage{
@@ -23,23 +24,37 @@ body {
   width: 100vw;
   position: relative;
   background: url(/images/weds3.jpg);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: -1px -150px;
-  opacity: 0.4;
   background-size: cover;
+  opacity: 0.5;
 }
 
+
+
 .back-ground {
-    background: url(/images/weds.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    background-size: cover;
-    background-position: -1px -250px;
     height: 100%;
     width: 100%;
 }
+
+.back-ground:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(/images/weds.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 
 .subtext {
     font-size: 3em;
@@ -178,113 +193,6 @@ svg {
    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-
-
-@media (max-width: 1350px) {
-.invitation-name-span {
-  font-size: 80px;
-}
-
-
-.invite-weds {
-  font-size: 40px;
-}
-
-}
-@media (max-width: 1200px) {
-  .invitation-name-span {
-  font-size: 60px;
-}
-
-
-.invite-weds {
-  font-size: 30px;
-}
-}
-@media (max-width: 1024px) {
-  .invitation-name-span {
-  font-size: 60px;
-}
-
-.back-ground {
-  background-position: -130px 0px;
-}
-
-.secondPageImage{
-  background-position: 0px 0px;
-}
-
-
-.invite-weds {
-  font-size: 30px;
-}
-}
-@media (max-width: 860px) {
-    .invitation-name-span {
-  font-size: 60px;
-}
-
-.subtext {
-  font-size: 1.5em;
-}
-.secondPageImage{
-  background-position: 0px 0px;
-}
-
-.back-ground {
-  background-position: -130px 0px;
-}
-.invite-weds {
-  font-size: 30px;
-}
-
-}
-
-
-@media (max-width: 660px) {
-    .invitation-name-span {
-  font-size: 35px;
-}
-
-.subtext {
-  font-size: 1.5em;
-}
-
-.back-ground {
-  background-position: -130px 0px;
-}
-.secondPageImage{
-      background-position: -200px 0px;
-}
-.invite-weds {
-  font-size: 20px;
-}
-
-
-}
-
-@media (max-width: 320px) {
-    .invitation-name-span {
-  font-size: 35px;
-}
-
-.subtext {
-  font-size: 1.2em;
-}
-
-.back-ground {
-  background-position: -130px 0px;
-}
-
-.secondPageImage{
-      background-position: -200px 0px;
-}
-.invite-weds {
-  font-size: 20px;
-}
-
-}
-
 .weakness {
   font-size: 2em;
 }
@@ -292,4 +200,537 @@ svg {
 .strength {
   font-size: 3em;
 }
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage{
+    background-position: -200px 0px;
+  }
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+    background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+        background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+    background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+        background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    .invitation-name-span {
+      font-size: 60px;
+    }
+
+    .subtext {
+      font-size: 1.5em;
+    }
+
+    .secondPageImage {
+      background-position: 0px 0px;
+    }
+
+    .back-ground {
+      background-position: -130px 0px;
+    }
+
+    .invite-weds {
+      font-size: 30px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    .invitation-name-span {
+      font-size: 100px;
+    }
+
+    .subtext {
+      font-size: 3em;
+    }
+
+
+    .back-ground {
+      background-position: 0px -200px;
+    }
+
+    .secondPageImage{
+      background-position: 0px -200px;
+    }
+
+
+    .invite-weds {
+      font-size: 30px;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+   .invitation-name-span {
+      font-size: 100px;
+    }
+
+    .subtext {
+      font-size: 3em;
+    }
+
+
+    .back-ground {
+      background-position: 0px -200px;
+    }
+
+    .secondPageImage{
+      background-position: 0px 0px;
+    }
+
+
+    .invite-weds {
+      font-size: 30px;
+    }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .invitation-name-span {
+    font-size: 80px;
+  }
+
+  .invite-weds {
+    font-size: 40px;
+  }
+}
+/* iPhone 6 landscape */
+@media only screen and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2)
+{ 
+   .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+        background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+        background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 6 portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2)
+{ 
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+        background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+        background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 6 Plus landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 3)
+{ 
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+        background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+        background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 6 Plus portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 3)
+{ 
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+        background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+    background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 6 and 6 Plus */
+@media only screen
+  and (max-device-width: 640px),
+  only screen and (max-device-width: 667px),
+  only screen and (max-width: 480px)
+{ 
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+    background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+    background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* Apple Watch */
+@media
+  (max-device-width: 42mm)
+  and (min-device-width: 38mm)
+{ 
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+    background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .invitation-name-span {
+    font-size: 35px;
+  }
+
+  .subtext {
+    font-size: 1.2em;
+  }
+
+  .back-ground {
+    background-position: -130px 0px;
+  }
+
+  .secondPageImage {
+    background-position: -200px 0px;
+  }
+
+  .invite-weds {
+    font-size: 20px;
+  }
+}
+
 

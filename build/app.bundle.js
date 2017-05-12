@@ -436,5 +436,9 @@ var calcNewYear = setInterval(function () {
     $("#timeleftSecond").text(seconds);
 }, 1000);
 
+$(document).ready(function () {
+    anm.on();
+});
+
 /***/ })
 /******/ ]);

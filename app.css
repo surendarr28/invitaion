@@ -17,6 +17,7 @@ body {
   width: 100vw;
   position: relative;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .secondPageImage{
@@ -28,6 +29,7 @@ body {
   background-position: -1px -150px;
   background-size: cover;
   opacity: 0.6;
+  overflow: hidden;
 }
 
 
@@ -68,6 +70,7 @@ body {
 .invitation-name {
   color: deeppink;
   text-align: center;
+  display: inline-block;
 }
 
 .invitation-name-span {

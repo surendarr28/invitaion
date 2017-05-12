@@ -436,5 +436,7 @@ var calcNewYear = setInterval(function () {
     $("#timeleftSecond").text(seconds);
 }, 1000);
 
+$(".back-ground").css({ "height": window.innerHeight + "px", "width": window.innerWidth + "px" });
+
 /***/ })
 /******/ ]);

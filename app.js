@@ -441,10 +441,10 @@ var calcNewYear = setInterval(function () {
     if (!days && !hours && !minutes && !seconds) {
         $("#secBlock").hide();
     }
-    $("#timeleftDay").text(days);
-    $("#timeleftHours").text(hours);
-    $("#timeleftMin").text(minutes);
-    $("#timeleftSecond").text(seconds);
+    $("#timeleftDay").text(Math.abs(days));
+    $("#timeleftHours").text(Math.abs(hours));
+    $("#timeleftMin").text(Math.abs(minutes));
+    $("#timeleftSecond").text(Math.abs(seconds));
 }, 1000);
 
 $(document).ready(function () {

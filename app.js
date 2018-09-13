@@ -441,7 +441,8 @@ var calcNewYear = setInterval(function () {
     if (!days && !hours && !minutes && !seconds) {
         $("#secBlock").hide();
     }
-    $("#timeleftDay").text(Math.abs(days));
+    var dayys = Math.abs(days);
+    $("#timeleftDay").text(dayys);
     $("#timeleftHours").text(Math.abs(hours));
     $("#timeleftMin").text(Math.abs(minutes));
     $("#timeleftSecond").text(Math.abs(seconds));
